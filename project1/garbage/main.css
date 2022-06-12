@@ -49,72 +49,31 @@ nav ul li.hover:hover {
         box-sizing: border-box;
     }
 
-    nav{
-        width: 20vw;
+    nav ul {
+        display: none;
+    }
+
+    nav {
         background-color: inherit;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav ul li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20vw;
-        background-color: #6453a6;
-        font-family: arial;
     }
 
     span {
         display: block;
+        background-color: red;
+        width: 20px;
     }
-
-    a {
-        text-decoration: none;
-    }
-
-    span:hover+ul li.img {
-        display: none;
-    }
-
-    span:hover+ul {
-        display: block;
-        /* background-color: aqua; */
-        width: 20vw;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    span:hover+ul li {
+    span:hover+ ul{
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        font-family: arial;
     }
-
-    span {
-        display: block;
-    }
-
-    span:hover+ul {
-        padding: 0;
-        text-decoration: none;
-    }
-
-    span:hover+ul li a {
+    span:hover + ul li{
+        justify-content: space-around;transition: 5s;
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 25vh;
-        /* background-color: green; */
-        text-align: center;
-        text-decoration: none;
-        color: black;
+    }
+    nav ul li.img{
+        display: none;
     }
 }

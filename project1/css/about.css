@@ -13,6 +13,10 @@ nav {
     background-color: #f2f2f2b0;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -182,6 +186,7 @@ p {
     }
 
     .footer ul {
+        padding-left: 0px;
         display: flex;
         justify-content: space-around;
         list-style-type: none;

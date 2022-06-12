@@ -9,6 +9,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 nav {
     background-color: #f2f2f2b0;
 }
@@ -79,12 +83,17 @@ h6 {
     box-shadow: 4px 4px 4px 4px black;
 }
 
+
 .formControll {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.7em;
     font-family: 'Roboto', sans-serif;
+}
+
+.lastName {
+    color: #8cbf3f;
 }
 
 .formControll input {
@@ -103,6 +112,11 @@ h6 {
     border: 0.0001px solid red;
 }
 
+.formControll.sucsses input {
+    color: black;
+    border: 0.0001px solid green;
+}
+
 small {
     font-size: 12pt;
     visibility: hidden;
@@ -115,27 +129,40 @@ small {
     height: 100px;
     background-color: #f2cc0f;
 }
+.formControll input::placeholder {
+    color: transparent;
+}
+.formControll textarea::placeholder{
+    color: transparent;
+}
 
 .footer {
     background-color: black;
     text-align: center;
     color: white;
     font-family: 'Pattaya';
-    position: relative;
+    font-size: 1em;
+    position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 99;
-    height: 210px;
+    z-index: -1;
+    height: 55px;
+    width: 100vw;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .footer ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style-type: none;
+}
+
+.footer ul li {
+    margin: 10px;
 }
 
 
@@ -153,7 +180,7 @@ small {
         top: 0;
         left: 0;
     }
-
+    
     nav ul {
         display: none;
     }
@@ -170,7 +197,7 @@ small {
     span {
         display: block;
     }
-
+    
     a {
         text-decoration: none;
     }
@@ -188,7 +215,7 @@ small {
     nav ul {
         display: none;
     }
-
+    
     span:hover+ul li {
         display: flex;
         justify-content: center;
@@ -205,7 +232,7 @@ small {
         padding: 0;
         text-decoration: none;
     }
-
+    
     span:hover+ul li a {
         display: flex;
         align-items: center;
@@ -222,16 +249,16 @@ small {
         align-items: center;
         padding: 10px;
     }
-
+    
     .form {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #8cbf3f;
+        background-color: #e8f0c8;
         border: #6453a6 2px solid;
         border-radius: 20px;
         text-align: center;
-        height: 800px;
+        height: 500px;
         width: 400px;
         font-size: 1em;
         padding: 0px;
@@ -250,7 +277,13 @@ small {
         width: 50%;
         height: 50px;
     }
-
+    .formControll input::placeholder {
+        color: black;
+    }
+    .formControll textarea::placeholder{
+        color: black;
+    }
+    
     .formControll.error small {
         visibility: visible;
         color: red;
@@ -274,24 +307,28 @@ small {
         height: 100px;
         background-color: #f2cc0f;
     }
-                .footer {
-                    background-color: black;
-                    text-align: center;
-                    color: white;
-                    font-family: 'Pattaya';
-                    font-size: 0.5em;
-                    font-weight: 800;
-                    position: relative;
-                    bottom: 0;
-                    left: 0;
-                    z-index: 99;
-                    height: 30px;
-                    overflow: hidden;
-                }
-        
-                .footer ul {
-                    display: flex;
-                    justify-content: space-around;
-                    list-style-type: none;
-                }
+
+    .footer {
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-family: 'Pattaya';
+        font-size: 0.8em;
+        font-weight: 800;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        z-index: -1;
+        height: 120px;
+        overflow: hidden;
+    }
+
+    .footer ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
 }

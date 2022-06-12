@@ -12,7 +12,10 @@ function showError(input,messege){
     small.innerHTML = messege
 }
 function showSucsses(input){
-    input.style.border = '2px blue solid'
+    const field = input.parentElement;
+    field.className = 'formControll sucsses'
+    const small = field.querySelector('small')
+    small.innerHTML = ''
 }
 
 form.addEventListener('submit', (e) => {
@@ -23,7 +26,7 @@ form.addEventListener('submit', (e) => {
         showSucsses(firstName)
     }
     if (lastName.value === '') {
-        showError(lastName,'Enter your last name')
+        showError(lastName,'Enter last name')
     }else{
         showSucsses(lastName)
     }
