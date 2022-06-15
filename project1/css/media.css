@@ -64,10 +64,11 @@ h6 {
 .fancyBox {
     text-align: center;
     display: grid;
-    grid-template-columns: 24vw 24vw 24vw 24vw;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 320px 320px 320px;
     gap: 15px;
     overflow: hidden;
+    margin: auto;
 }
 
 .fancyBox a {
@@ -75,8 +76,8 @@ h6 {
 }
 
 .fancyBox a img {
-    width: 20vw;
-    height: 300px;
+    width: 25vw;
+    height: 320px;
     border: 1px solid violet;
 }
 

@@ -9,6 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+::selection {
+    color: #6453a6;
+    background-color: #8cbf3f;
+}
+
 nav {
     background-color: #f2f2f2b0;
 }
@@ -30,6 +35,7 @@ nav ul li {
     width: 25vw;
     font-family: arial;
     padding: 0;
+    height: 50px;
 }
 
 span {
@@ -54,8 +60,15 @@ nav ul li.hover:hover {
 
 .float-left {
     float: left;
-    height: 200px;
-    width: 300px;
+    height: 400px;
+    width: 500px;
+    margin-right: 5px;
+}
+
+.float-left-mayor {
+    float: left;
+    height: 400px;
+    width: 500px;
     margin-right: 5px;
 }
 
@@ -82,7 +95,7 @@ p {
     position: relative;
     bottom: 0;
     left: 0;
-    z-index: 99;
+    z-index: -01;
     height: 30px;
     overflow: hidden;
 }
@@ -106,6 +119,7 @@ p {
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 100;
     }
 
     nav ul {
@@ -117,13 +131,13 @@ p {
         justify-content: center;
         align-items: center;
         width: 20vw;
+        height: 25vh;
         background-color: #f2f2f2d4;
         font-family: arial;
     }
 
     span {
         display: block;
-        z-index: 100;
     }
 
     a {
@@ -153,6 +167,7 @@ p {
 
     span {
         display: block;
+        z-index: 100;
     }
 
     span:hover+ul {
@@ -168,6 +183,32 @@ p {
         text-align: center;
         text-decoration: none;
         color: black;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 0.5em;
+        text-align: left;
+        color: #dacc85;
+        padding: 2px;
+    }
+
+    .tradition ul li {
+        list-style-type: none;
+    }
+
+    .float-left {
+        float: left;
+        height: 200px;
+        width: 200px;
+        margin-right: 5px;
+    }
+
+    .float-left-mayor {
+        float: left;
+        height: 150px;
+        width: 200px;
+        margin-right: 5px;
     }
 
     .footer {

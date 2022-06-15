@@ -9,6 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+::selection {
+    color: #6453a6;
+    background-color: #8cbf3f;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -112,6 +117,11 @@ h6 {
     border: 0.0001px solid red;
 }
 
+.formControll.error textarea {
+    color: red;
+    border: 0.0001px solid red;
+}
+
 .formControll.sucsses input {
     color: black;
     border: 0.0001px solid green;
@@ -129,10 +139,12 @@ small {
     height: 100px;
     background-color: #f2cc0f;
 }
+
 .formControll input::placeholder {
     color: transparent;
 }
-.formControll textarea::placeholder{
+
+.formControll textarea::placeholder {
     color: transparent;
 }
 
@@ -180,7 +192,7 @@ small {
         top: 0;
         left: 0;
     }
-    
+
     nav ul {
         display: none;
     }
@@ -190,14 +202,14 @@ small {
         justify-content: center;
         align-items: center;
         width: 20vw;
-        background-color: #f2f2f2d4;
+        background-color: #f2f2f2c8;
         font-family: arial;
     }
 
     span {
         display: block;
     }
-    
+
     a {
         text-decoration: none;
     }
@@ -215,12 +227,11 @@ small {
     nav ul {
         display: none;
     }
-    
+
     span:hover+ul li {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        font-family: arial;
     }
 
     span {
@@ -232,7 +243,7 @@ small {
         padding: 0;
         text-decoration: none;
     }
-    
+
     span:hover+ul li a {
         display: flex;
         align-items: center;
@@ -249,7 +260,7 @@ small {
         align-items: center;
         padding: 10px;
     }
-    
+
     .form {
         display: flex;
         justify-content: center;
@@ -277,13 +288,15 @@ small {
         width: 50%;
         height: 50px;
     }
+
     .formControll input::placeholder {
         color: black;
     }
-    .formControll textarea::placeholder{
+
+    .formControll textarea::placeholder {
         color: black;
     }
-    
+
     .formControll.error small {
         visibility: visible;
         color: red;
