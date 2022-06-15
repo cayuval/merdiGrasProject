@@ -24,6 +24,12 @@ nav ul li {
 
 nav.desktopNav {
     background-color: rgba(192, 180, 180, 0.514);
+    position: fixed;
+    z-index: 150;
+    top: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
 }
 
 nav.desktopNav ul {
@@ -36,7 +42,7 @@ nav.desktopNav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25vw;
+    width: 20vw;
     font-family: arial;
     padding: 0;
 }
@@ -88,6 +94,10 @@ nav.mobileNav {
     color: #8cbf3f;
 }
 
+.container-fluid{
+    padding: 0;
+    margin-top: 50px;
+}
 .content {
     position: relative;
     top: 0;
@@ -155,9 +165,20 @@ p {
     }
 
     span {
-        display: block;
+        display: flex;
         position: fixed;
         z-index: 100;
+        top: 0;
+        background-color: #f2f2f28f;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-fluid{
+        margin-top: 50px;
     }
 
     .content {
