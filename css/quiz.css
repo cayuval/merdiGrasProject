@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.answers{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100px 100px;
+}
+span[class^='answer']{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    border: 2px solid black;
+    width: 50vw;
+    height: 100px;
+}
+.score{
+    text-align: center;
+    background-color:black;
+    color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}

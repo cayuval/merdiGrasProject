@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6453a6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header img[src="img/MerdiGrarSLOGO.png"] {
+    height: 88px;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #f2f2f2;
+}
+
+
+.stickyNav {
+    width: 100vw;
+    background-color: #f2f2f2;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    /* width: 100vw; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #f2f2f2;
+}
+
+.header nav ul li {
+    display: block;
+    width: 18vw;
+    text-align: center;
+    padding: 20px;
+}
+
+.header nav ul li.hover:hover {
+    cursor: pointer;
+    background: #6453a6;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Pattaya';
+    font-size: 2em;
+    overflow: hidden;
+}
+
+.main {
+    padding: 20px;
+    text-align: justify;
+    line-height: 2;
+    background-color: #f2cc0f;
+    margin-top: 45px;
+}
+
+.main h2 {
+    text-align: center;
+    font-family: 'Pattaya';
+}
+
+.card {
+    margin: 25px;
+    background-color: #35237a;
+    color: #f2cc0f;
+    padding: 50px;
+}
+
+.card h5 {
+    font-family: 'Pattaya';
+}
+
+.footer {
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+    font-family: 'Pattaya';
+}
+
+#Hamburger {
+    display: none;
+}
+
+.responsiveImg {
+    display: none;
+}
+
+@media(max-width:768px) {
+    #Hamburger {
+        display: block;
+    }
+
+    .responsiveImg {
+        display: block;
+        width: 100vw;
+        height: 150px;
+        margin:auto ;
+    }
+
+    #carouselExampleCaptions {
+        display: none;
+    }
+
+    .header img[src="img/MerdiGrarSLOGO.png"] {
+        display: none;
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .stickyNav {
+        width: 100vw;
+        height: 40px;
+        background-color: #f2f2f2;
+    }
+        #Hamburger:hover+nav ul li{
+            display: block;
+    }
+}
