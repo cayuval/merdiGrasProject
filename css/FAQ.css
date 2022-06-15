@@ -8,10 +8,12 @@ body {
     background-color: #6453a6;
     font-family: 'Roboto', sans-serif;
 }
+
 ::selection {
     color: #6453a6;
     background-color: #8cbf3f;
 }
+
 .container-fluid {
     padding: 0;
 }
@@ -84,10 +86,12 @@ nav.mobileNav {
     align-items: center;
     height: 25vh;
 }
+
 .mobileNav ul li a {
     text-align: center;
     color: #8cbf3f;
 }
+
 .content {
     position: relative;
     top: 0;
@@ -128,6 +132,7 @@ h6 {
     align-items: center;
     list-style-type: none;
 }
+
 .footer ul li {
     margin: 10px;
 }
@@ -138,33 +143,35 @@ h6 {
 
 @media (max-width:780px) {
     * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-    
-        .desktopNav {
-            display: none;
-        }
-    
-        span {
-            display: block;
-            position: fixed;
-            z-index: 100;
-        }
-    
-        .content {
-            position: relative;
-            z-index: 0;
-        }
-    
-        span:hover+.mobileNav {
-            display: block;
-        }
-    
-        .mobileNav:hover {
-            display: block;
-        }
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    span {
+        display: block;
+        position: fixed;
+        z-index: 100;
+        width: 100px;
+        height: 100px;
+    }
+
+    .content {
+        position: relative;
+        z-index: 0;
+    }
+
+    span:hover+.mobileNav {
+        display: block;
+    }
+
+    .mobileNav:hover {
+        display: block;
+    }
 
     .footer {
         background-color: black;
