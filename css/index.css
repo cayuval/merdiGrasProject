@@ -81,13 +81,14 @@ nav.mobileNav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index:1000;
 }
 
 .mobileNav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index:1000;
 }
 
 .mobileNav ul li {
@@ -170,6 +171,8 @@ h6 {
 .popup .close {
     text-align: right;
     margin: 2px;
+    position: fixed;
+    font-size: 1.5em;
 }
 
 .popup img {
@@ -210,7 +213,7 @@ h6 {
     span {
         display: flex;
         position: fixed;
-        z-index: 100;
+        z-index: 1000;
                 background-color: #f2f2f28f;
                     border-radius: 50%;
                     width: 50px;
@@ -260,10 +263,11 @@ h6 {
         position: fixed;
         top: 1px;
         left: 1px;
-        z-index: 10000000;
+        z-index: 100;
         display: none;
         overflow: auto;
     }
+
 
     .popup img {
         width: 80%;
