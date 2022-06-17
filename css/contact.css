@@ -64,6 +64,7 @@ a {
 
 nav.desktopNav ul li img {
     height: 50px;
+
 }
 
 nav.desktopNav ul li.hover:hover {
@@ -169,7 +170,11 @@ h6 {
 }
 
 .formControll.sucsses input {
-    color: black;
+    color: green;
+    border: 0.0001px solid green;
+}
+.formControll.sucsses textarea {
+    color: green;
     border: 0.0001px solid green;
 }
 
@@ -335,7 +340,7 @@ small {
         text-align: center;
         color: white;
         font-family: 'Pattaya';
-        font-size: 0.8em;
+        font-size: 0.0.8em;
         font-weight: 800;
         position: absolute;
         bottom: 0;
@@ -343,7 +348,7 @@ small {
         width: 100vw;
         z-index: -1;
         height: 120px;
-        overflow: hidden;
+        overflow: auto;
     }
 
     .footer ul {
@@ -354,3 +359,4 @@ small {
     }
 
 }
+

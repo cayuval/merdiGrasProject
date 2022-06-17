@@ -74,7 +74,7 @@ nav.desktopNav ul li.hover:hover {
 }
 
 nav.mobileNav {
-    width: 25vw;
+    width: 33vw;
     height: 100vh;
     display: none;
     background-color: #f2f2f2df;
@@ -155,15 +155,16 @@ h6 {
     font-family: arial;
     text-align: center;
     width: 800px;
-    height: 800px;
+    height: 500px;
     padding: 20px;
     position: relative;
     border-radius: 8px;
     position: fixed;
-    top: 30vh;
-    left: 30vw;
+    top: 10vh;
+    left: 10vw;
     z-index: 10;
     display: none;
+    overflow: auto;
 }
 
 .popup .close {
