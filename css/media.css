@@ -42,7 +42,6 @@ nav.desktopNav ul li {
     justify-content: center;
     align-items: center;
     width: 20vw;
-    font-family: arial;
     padding: 0;
 }
 
@@ -72,7 +71,7 @@ nav.mobileNav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 100;
     width: 100px;
     height: 100px;
 }
@@ -143,12 +142,9 @@ h6 {
 .youtube {
     display: flex;
     justify-content: space-around;
-    animation: forwards 5s;
 }
 
-.youtube iframe {
-    width: 350px;
-}
+
 
 .footer {
     background-color: black;
@@ -227,7 +223,10 @@ h6 {
     }
 
     .youtube iframe {
+        margin: auto;
         display: block;
+        width: 350px;
+        height: 315px;
     }
 
     .footer {
